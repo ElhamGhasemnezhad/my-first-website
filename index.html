@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>خبرگزاری اقتصاد ایران | Economic News Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/general-style.css" >
+    <link rel="stylesheet" href="./assets/css/header-first-section.css">
+    <link rel="stylesheet" href="./assets/css/header-second-section.css">
+    <link rel="stylesheet" href="./assets/css/haeder-second-section-submenu.css">
+    <link rel="stylesheet" href="./assets/css/header-third.css">
+    <link rel="stylesheet" href="./assets/css/third-submenu.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  </head>
+  <body>
+    <div class="wrapper">                         <!--کانتنر اصلی-->
+      <div class="header">                                  <!--هدر-->
+        <div class="first-header-menu container">    <!--بخش اول هدر-->
+          <div class="first-header-menu-right">      <!--قسمت سمت راست  که شامل دوتا بخش-->
+            <div class="date-time">         <!--تاریخ و زمان را در یک  لیست دریک دیو مجزا قرار دادم -->
+              <ul> 
+                <li>
+                  <i class="fa-regular fa-calendar-days"></i>
+                  شنبه ۶ بهمن ۱۴۰۳
+                </li>
+                <li>
+                  <i class="fa-regular fa-clock"></i>
+                  ۱۱:۱۱:۱۱
+                </li>
+              </ul>
+            </div>
+            <div class="form-btn">
+              <button type="button" class="dropdown" onclick="Show()">
+                <i class="fa-solid fa-user"></i> ورود/ عضویت
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="form-input" id="form-menu">
+                <input
+                  type="text"
+                  placeholder="  نام کاربری یا ادرس ایمیل"
+                  class="form-input-text"
+                >
+                <input
+                  type="password"
+                  placeholder=" کلمه عبور"
+                  class="form-input-text"
+                >
+                <div class="checkbox">
+                  <input type="checkbox" id="check" class="checkbox-style" >
+                  <label for="check"> مرا به خاطر بسپار </label>
+                </div>
+                <div class="form-submit">
+                  <button type="button" class="submit-1">ورود</button>
+                  <button type="button" class="submit-2">عضویت</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="first-header-menu-left">
+            <div class="first-header-menu-scroll">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-coins"></i> قیمت طلا وسکه</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-fire"></i> نفت وسوخت </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-database"></i> فلزات پایه</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-earth-americas"></i> کالاهای جهانی</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-globe"></i> بورس جهانی </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-box-archive"></i> ارشیو </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="search-box">
+                <input class="search" type="text" placeholder=" جستجو ..." />
+                <i class="fa-solid fa-magnifying-glass" style="color: red"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-header-menu">
+          <div class="second-header-menu-container container">
+            <div class="second-header-menu-right">
+              <div class="right-btn-img" >
+                <div class="second-bar-menu" >
+                  <button type="button" onclick="burger()" ><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <div class="second-right-img">
+                  <img src="./assets/img/logo (1).png" alt="warning">
+                </div>
+              </div>
+              <div class="second-nav-menu" >
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="#">
+                      اخبارورویدادها <i class="fa-solid fa-caret-down"></i>
+                    </a> 
+                    <ul class="submenu event">
+                      <li class="sub-table">
+                        <table>
+                          <tr>
+                            <th colspan="6"> دسته بندی عمومی</th>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> عناوین کل سرویس </td>
+                            <td colspan="3"> سیاست </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3" > فرهنگ </td>
+                            <td colspan="3"> ورزش</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> جامعه </td>
+                            <td colspan="3"> فناوری</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> سلامت </td>
+                            <td colspan="3"> استان ها </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> گفتگو </td>
+                            <td colspan="3"> یادداشت </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> توئیت </td>
+                            <td colspan="3"> اینستاگرام </td>
+                          </tr>
+                          <tr>
+                            <td colspan="6"> پژوهش </td>
+                          </tr>
+                        </table>
+                      </li>
+                      <li class="sub-table">
+                        <table>
+                          <tr>
+                            <th colspan="6"> دسته بندی تخصصی اقتصاد </th>
+                          </tr>
+                          <tr>
+                            <td colspan="2"> عناوین کل سررویس </td>
+                            <td colspan="2"> جهان </td>
+                            <td colspan="2"> ECO|اکو </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2"> کلان و بودجه </td>
+                            <td colspan="2"> بانک </td>
+                            <td colspan="2"> بیمه </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2"> کارگزارهای برتر </td>
+                            <td colspan="2"> نفت وگاز </td>
+                            <td colspan="2"> پتروشیمی</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2"> صنعت اب وبرق</td>
+                            <td colspan="2"> صنایع و معادن </td>
+                            <td colspan="2"> تجارت و بازرگانی </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2"> کار و تعاون </td>
+                            <td colspan="2"> اقتصاد شهری </td>
+                            <td colspan="2"> اقتصاد دیجیتالی</td>
+                          </tr>
+                          <tr>
+                            <td colspan="2"> کشاوری و دام پروری </td>
+                            <td colspan="4"> اخبار شرکت ها</td>
+                          </tr>
+                        </table>
+                      </li>
+                      <li class="sub-table">
+                        <table>
+                          <tr>
+                            <th colspan="6"> دسته بندی ویژه </th>
+                          </tr>
+                          <tr>
+                            <td colspan="3">  عناوین کل سرویس </td>
+                            <td colspan="3"> بازاروسرمایه </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> چهره های شاخص </td>
+                            <td colspan="3"> اقتصاد دانش بنیان </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> اقتصادفرهنگ وهنر</td>
+                            <td colspan="3"> اقتصاد ورزش </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> خودرو </td>
+                            <td colspan="3"> راه و شهر سازی </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> اقتصاد سبز </td>
+                            <td colspan="3"> تورسیم و گرشگری </td>
+                          </tr>
+                          <tr>
+                            <td colspan="3"> سبک زندگی </td>
+                            <td colspan="3"> راهنمای  بازار </td>
+                          </tr>
+                          <tr>
+                            <td colspan="6"> اقتصاد سلامت </td>
+                          </tr>
+                        </table>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#">
+                        نرخ ها و داده ها 
+                        <i class="fa-solid fa-caret-down"></i>
+                      </a>
+                     <ul class="submenu data">
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i> ارزها</a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i>  قیمت طلا وسکه </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i>  فلزات پایه </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i>  نفت وسوخت </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i>  کالاهای جهانی </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i>  بورس جهانی </a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#">
+                      استان ها 
+                     <i class="fa-solid fa-caret-down"></i>
+                     </a>
+                    <ul class="submenu city">
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  اذربایجان شرقی</a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  اذربایجان غربی </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  اردبیل </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  اصفهان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  البرز </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  ایلام </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  بوشهر</a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  تهران </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  چهارمحال بختیاری </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  خراسان جنوبی </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  خراسان رضوی </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  خراسان شمالی </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  خوزستان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  زنجان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  سمنان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  سیستان بلوچستان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  فارس </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  قزوین </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  قم </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  کردستان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  کرمان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  کرمانشاه </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  کهکیلویه و بویر احمد</a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  گلستان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  گیلان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  لرستان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  مازندران </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  مرکزی </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  هرمزگان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  همدان </a></li>
+                      <li><a href="#"><i class="fa-solid fa-chevron-left"></i>  یزد </a></li>
+                     </ul>     
+                  </li>    
+                  <li class="nav-item">
+                     <a href="#">
+                      مناطق ازاد 
+                     <i class="fa-solid fa-caret-down"></i>
+                     </a>
+                     <ul class="submenu free-zone">
+                      <li><a href="#"><img src="./assets/img/maku.png" alt="this photo ca not load" ></a></li>
+                      <li><a href="#"><img src="./assets/img/qeshm.png" alt="this photo ca not load"></a></li>
+                      <li><a href="#"><img src="./assets/img/kish.png" alt="this photo ca not load"></a></li>
+                      <li><a href="#"><img src="./assets/img/chabahar.png" alt="this photo ca not load"></a></li>
+                      <li><a href="#"><img src="./assets/img/anzali.png" alt="this photo ca not load"></a></li>
+                      <li><a href="#"><img src="./assets/img/aras.png" alt="this photo ca not load"></a></li>
+                      <li><a href="#"><img src="./assets/img/arvand.png" alt="this photo ca not load"></a></li>
+                     </ul>
+                    </li> 
+                  <li class="nav-item">
+                    <a href="#">
+                      چندرسانه ای 
+                      <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="submenu media">
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i>  فیلم </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i> صوت </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i> کلیپ </a></li>
+                      <li class="sub-list"><a href="#"> <i class="fa-solid fa-chevron-left"></i> تیزر </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i> عکس </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i> اینفوگرافی </a></li>
+                      <li class="sub-list"><a href="#"><i class="fa-solid fa-chevron-left"></i> کاریکاتور </a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item advertise">
+                     <a href="#">نیازمندی ها </a>
+                  </li>
+                  <li class="nav-item second-search-item">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> جستجو </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="second-header-menu-left">
+              <img src="./assets/img/m-noroz-1710929559.jpg" alt="warning">
+            </div>
+          </div>
+        </div>
+        <div class="third-header-menu ">
+          <button class="scroll-btn right-btn"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="third-header-menu-container container">
+            <ul class="nav-list-menu">
+              <li class="nav-item-3"><button class="btn-bar"><i class="fa-solid fa-bars"></i></button></li>
+              <li class="nav-item-3 bg-gray"><a href="#"> EAEU | اوراسیا </a>
+                <ul class="nav-list-3">
+                 <div class="container EAEU">
+                  <li class="bg-gray"><a href="#"> <i class="fa-solid fa-house-chimney"></i> EAEU | صفحه اصلی اوراسیا </a></li>
+                  <li class="bg-gray"><a href="#"> ایران و روسیه </a></li>
+                  <li class="bg-gray"><a href="#"> ارمنستان وبلاروس </a></li>
+                  <li class="bg-gray"><a href="#"> قزاقستان و قرقیزستان </a></li>
+                  <li class="bg-gray"><a href="#"> <i class="fa-solid fa-square-rss"></i> عناوین کل اخبار </a></li>
+                 </div>
+                </ul>
+              </li>
+              <li class="nav-item-3  bg-blue">
+                <a href="#"> جهان </a>
+              </li>
+              <li class="nav-item-3 bg-light">
+               <a href="#"> ECO | اکو </a>
+               <ul class="nav-list-3 ">
+                <div class="container ECO">
+                  <li class="bg-light">
+                    <a href="#"> <i class="fa-solid fa-house-chimney"></i>  ECO | صفحه اصلی اکو </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/iran-log-1-1699529252.png" alt="IRAN"> 
+                      ECO IRAN | ایران 
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#"> 
+                      <img src="./assets/img/turk-log-1699528084.png" alt="Turkiye">
+                      Turkiye | ترکیه
+                    </a>
+                    </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/azar-log-1699529273.png" alt="Azerbaijan">
+                      Azerbaijan | اذربایجان 
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/turkaman-log-1699529290.png" alt="Turkmenistan">
+                       Turkmenistan | ترکمنستان
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#"> 
+                      <img src="./assets/img/tajikestan-1699529979.png" alt="Tajikistan">
+                      Tajikistan | تاجیکستان
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/gazag-log-1699529436.png" alt="Kazakhstan"> 
+                      Kazakhstan | قزاقستان
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/girgiz-log-1699529461.png" alt="Kyrgyzstan"> 
+                      Kyrgyzstan | قرقیزستان
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/uzbakestan-1699529925.png" alt="Uzbekistan"> 
+                      Uzbekistan | ازبکستان
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/afghan-log-1699529504.png" alt="Afghanistan">
+                      Afghanistan | افغانستان
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <img src="./assets/img/pakistan-log-1699529529.png" alt="Pakistan"> 
+                      Pakistan | پاکستان 
+                    </a>
+                  </li>
+                  <li class="bg-light">
+                    <a href="#">
+                      <i class="fa-solid fa-square-rss"></i>
+                      عناوین کل اخبار 
+                    </a>
+                  </li>
+                </div>
+               </ul>
+              </li>
+              <li class="nav-item-3 bg-red">
+                <a href="#"> کلان و بودجه </a>
+              </li>
+              <li class="nav-item-3 bg-violet">
+                <a href="#"> بانک </a>
+                <ul class="nav-list-3 ">
+                 <div class="container bank">
+                  <li class="bg-violet">
+                    <a href="#">
+                      <i class="fa-solid fa-house-chimney"></i>
+                      صفحه اصلی بانک
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/bn-mrz-1528793962.jpg" alt="markazi">
+                      بانک مرکزی
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/bank-melli-logo-1696699921.jpg" alt="meli">
+                      بانک ملی ایران
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/122-1528884699.jpg" alt="melat">
+                      بانک ملت
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/123-1528884799.jpg" alt="tejarat">
+                      بانک تجارت
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/127-1528884894.jpg" alt="بانک صادرات ایران">
+                      بانک صادرات ایران
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/89-1528886205.jpg" alt="بانک ایران زمین">
+                      بانک ایران زمین
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/021-1528859890.jpg" alt="بانک پاسارگاد">
+                      بانک پاسارگاد
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/اینده.jpg" alt="ayandeh">
+                      بانک اینده
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/پارسیان.jpg" alt="parsiyan">
+                      بانک پارسیان
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#"> 
+                      <img src="./assets/img/اقتصاد.jpg" alt="eco">
+                      بانک اقتصادنوین
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/دی.jpg" alt="dey">
+                      بانک دی
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/خاورمیانه.jpg" alt="midle">
+                      بانک خاورمیانه
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/سامان.jpg" alt="saman">
+                      بانک سامان
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/سینا.jpg" alt="sina">
+                      بانک سینا
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/سرمایه.jpg" alt="sarmayeh">
+                      بانک سرمایه
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/کار افرین.jpg" alt="karafarin">
+                      بانک کارافرین
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/گردشکری.jpg" alt="gardeshgari">
+                      بانک گردشگری
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/رسالت.jpg" alt="بانک رسالت">
+                      بانک رسالت
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/توسعه.jpg" alt="بانک توسعه و تعاون">
+                      بانک توسعه و تعاون
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/توسعه صادرات.jpg" alt="بانک توسعه صادرات ایران">
+                      بانک توسعه صادرات ایران
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/مهر.png" alt="بانک قرص الحسنه مهر ایران">
+                      بانک قرص الحسنه مهر ایران
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/معدن.jpg" alt="بانک صنعت و معدن">
+                      بانک صنعت و معدن
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/سپه.jpg" alt="بانک سپه">
+                      بانک سپه
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/مسکن.jpg" alt="بانک مسکن">
+                      بانک مسکن
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      بانک کشاورزی
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/رفاه.jpg" alt="بانک رفاه">
+                      بانک رفاه
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/پست.jpg" alt="پست بانک">
+                      پست بانک
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/ونزوئلا.jpg" alt="بانک مشترک ایران و ونزوئلا">
+                      بانک مشترک ایران و ونزوئلا
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      بانک شهر
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/صندوق.jpg" alt="صندوق توسعه ملی">
+                      صندوق توسعه ملی
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <img src="./assets/img/ملل.jpg" alt="موسسه ملل">
+                      موسسه ملل
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      موسسه اموزشی بانک داری
+                    </a>
+                  </li>
+                  <li class="bg-violet">
+                    <a href="#">
+                      <i class="fa-solid fa-square-rss"></i>
+                      عناوین کل اخبار
+                    </a>
+                  </li>
+                 </div>
+                </ul>
+              </li>
+              <li class="nav-item-3 bg-f">
+                <a href="#">
+                   بیمه 
+                </a>
+                <ul class="nav-list-3 ">
+                  <div class="container bimeh">
+                    <li clas="bg-f">
+                      <a href="#">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        صفحه اصلی بیمه
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/مرکزی.jpg" alt="بیمه مرکزی">
+                        بیمه مرکزی
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه توسعه.jpg" alt="بیمه توسعه">
+                        بیمه توسعه
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/bmh-tgrt-no-1698502474.jpg" alt="بیمه تجارت نو">
+                        بیمه تجارت نو
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/ازکی.jpg" alt="بیمه ازکی">
+                        بیمه ازکی
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/ایران.jpg" alt="بیمه ایران">
+                        بیمه ایران
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/اسیا.jpg" alt="بیمه اسیا">
+                        بیمه اسیا
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/البرز.jpg" alt="بیمه البرز">
+                        بیمه البرز
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/دانا.jpg" alt="بیمه دانا">
+                        بیمه دانا
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/معلم.jpg" alt="بیمه معلم">
+                        بیمه معلم
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه پارسیان.jpg" alt="بیمه پارسیان">
+                        بیمه پارسیان
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه سینا.jpg" alt="بیمه سینا">
+                        بیمه سینا
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/رازی.jpg" alt="بیمه رازی">
+                        بیمه رازی
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه سامان.jpg" alt="بیمه سامان">
+                        بیمه سامان
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/دی.jpg" alt="بیمه دی">
+                        بیمه دی
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه ملت.jpg" alt="بیمه ملت">
+                        بیمه ملت
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه نوین.jpg" alt="بیمه نوین">
+                        بیمه نوین
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه پاسارگاد.jpg" alt="بیمه پاسارگاد">
+                        بیمه پاسارگاد
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/کوثر.jpg" alt="بیمه کوثر">
+                        بیمه کوثر
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/ما.jpg" alt="بیمه ما">
+                        بیمه ما
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/ارمان.jpg" alt="بیمه ارمان">
+                        بیمه ارمان
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/بیمه تعاون.jpg" alt="بیمه تعاون">
+                        بیمه تعاون
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/سرمد.jpg" alt="بیمه سرمد">
+                        بیمه سرمد
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/اتکایی.jpg" alt="بیمه اتکایی ایرانیان">
+                        بیمه اتکایی ایرانیان
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/" alt="">
+                        بیمه اتکایی امین
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/" alt="">
+                        بیمه حاغظ
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/امید.jpg" alt="بیمه امید">
+                        بیمه امید
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/میهن.jpg" alt="بیمه ایران مهین">
+                        بیمه ایران مهین
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/کیش.jpg" alt="بیمه متقابل کیش">
+                        بیمه متقابل کیش
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/اسماری.jpg" alt="بیمه اسماری">
+                        بیمه اسماری
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        بیمه حکت صبا
+                        <img src="./assets/img/صبا.jpg" alt="بیمه حکت صبا">
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <img src="./assets/img/خاورمیانه.jpg" alt="بیمه زندگی خاورمیانه">
+                        بیمه زندگی خاورمیانه
+                      </a>
+                    </li>
+                    <li class="bg-f">
+                      <a href="#">
+                        <i class="fa-solid fa-square-rss"></i>
+                        عناوین کل اخبار
+                       
+                      </a>
+                    </li>
+
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item-3 bg-green">
+                <a href="#"> کارگزارهای برتر </a>
+                <ul class="nav-list-3 ">
+                  <div class="container broker">
+                    <li class="bg-green">
+                      <i class="fa-solid fa-house-chimney"></i>
+                      <a href="#">صفحه اصلی کارگزاری های  برتر</a></li>
+                    <li class="bg-green">
+                      <a href="#">
+                        <img src="./assets/img/مفید.png" alt="کارگزاری مفید">
+                        کارگزاری مفید
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        <img src="./assets/img/" alt="">
+                        کارگزاری فارابی
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        <img src="./assets/img/اگاه.png" alt="کارگزاری اگاه">
+                        کارگزاری اگاه
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        <img src="./assets/img/karizma-1698685112.png" alt="کارگزاری کاریزما">
+                        کارگزاری کاریزما
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        <img src="./assets/img/مبین.png" alt="کارگزاری مبین سرمایه">
+                        کارگزاری مبین سرمایه
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        کارگزاری پاسارگاد
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        کارگزاری حافظ
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        کارگزاری اقتصاد بیدار
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        کارگزاری نهایت نگر
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        کارگزاری پارسیان
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        کارگزاری سهم اشنا
+                      </a>
+                    </li>
+                    <li class="bg-green">
+                      <a href="#">
+                        <i class="fa-solid fa-square-rss"></i>
+                        عناوین کل اخبار 
+                      </a>
+                    </li>
+                  </div>
+                
+                </ul>
+              </li>
+              <li class="nav-item-3 bg-coral">
+                <a href="#"> نفت و گاز </a>
+              </li>
+              <li class="nav-item-3 bg-crimson">
+                <a href="#"> پتروشیمی </a>
+                <ul class="nav-list-3  ">
+                  <div class="container petro">
+                    <li class="bg-crimson">
+                      <a href="#">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        صفحه اول پتروشیمی
+                      </a>
+                    </li>
+                    <li class="bg-crimson">
+                      <a href="#">
+                       پتروشیمی خراسان
+                      </a>
+                    </li>
+                    <li class="bg-crimson">
+                      <a href="#">
+                        <i class="fa-solid fa-square-rss"></i>
+                        عناوین کل اخبار
+                      </a>
+                    </li>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item-3 bg-corn"><a href="#"> صنعت اب وبرق </a></li>
+              <li class="nav-item-3 bg-darkred"><a href="#"> صنایع و معادن </a></li>
+              <li class="nav-item-3 bg-pink"><a href="#"> تجارت و بازرگانی </a></li>
+              <li class="nav-item-3 bg-orenge"><a href="#"> کار و تعاون </a></li>
+              <li class="nav-item-3 bg-purple"><a href="#"> اقتصاد شهری </a></li>
+              <li class="nav-item-3 bg-peru"><a href="#"> اقتصاد دیجیتالی </a></li>
+              <li class="nav-item-3 bg-yellow"><a href="#">   کشاورزی ودامپروری</a></li>
+              <li class="nav-item-3 bg-linen"><a href="#"> اخبار شرکت ها </a></li>
+            </ul>
+          </div>
+          <button class="scroll-btn left-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        </div>
+      </div>
+      <div class="main">
+        <div class="slid">
+
+          
+
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
