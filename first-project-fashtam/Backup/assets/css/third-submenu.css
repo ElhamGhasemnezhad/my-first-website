@@ -1,0 +1,78 @@
+.nav-item-3:hover .nav-list-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    background-color: gray;
+}
+
+.ECO {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+   
+}
+.ECO >li {
+    width: 25%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.EAEU {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    
+}
+
+.EAEU >li{
+  width: 19%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.bank {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.bank >li{
+  width: 15%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.bimeh {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.bimeh >li {
+ width: 15%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.petro{
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.petro >li {
+ width: 33%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+

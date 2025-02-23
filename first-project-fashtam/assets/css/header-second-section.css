@@ -1,0 +1,167 @@
+/*css استایل های کلی قسمت دوم هدر */
+.second-header-menu {
+  background-color: #bb0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.second-header-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../img/header-overlay.png);
+  flex-wrap: nowrap;
+}
+
+.second-header-menu-right {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.second-nav-menu {
+  width: 100%;
+}
+
+.nav-list {
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.nav-item > a {
+  color: #fff;
+  font-family: nassim;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 30px 8px;
+  display: block;
+}
+
+.second-nav-menu > ul  > li:hover { 
+  background-color: rgba(0, 0, 0, 0.158);
+  box-shadow: inset 0 0 10px rgb(17, 3, 3);
+}
+
+.second-right-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.second-header-menu-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.second-bar-menu {
+  display: none;
+}
+
+.right-btn-img {
+  display: flex;
+}
+/*مربوط به ریسپانسیو قسمت دوم هدر*/
+@media screen and (max-width:992px) {
+  .right-btn-img {
+    margin-top: 15px;
+    margin-left: auto;
+  }
+
+  .second-header-menu {
+    position: relative;
+  }
+  
+  .second-header-menu-right {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+
+  }
+
+  .second-nav-menu .nav-list {
+    display: none;
+  }
+
+  .second-nav-menu .nav-list.show {
+    display: block;    
+  }
+
+  .second-nav-menu .nav-list.show > li {
+    padding: 5px;
+    background-color: #0c0101;
+  }
+
+  .nav-item a{
+    padding: 10px;
+  }
+
+  .nav-item:hover > a {
+    background-color: #bb0000;
+  }
+
+  .second-bar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .second-bar-menu button i {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .second-bar-menu button {
+    display: flex;
+    padding: 9px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+  
+  }
+
+  .second-bar-menu button:hover {
+    background-color: #0c0101;
+  }
+
+  .second-header-menu {
+    position: relative;
+  }
+
+  .second-nav-menu {
+    position: static;
+    background-color: black; 
+  } 
+
+  .second-header-menu-left {
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 38px;
+    width: 120px;
+    height: auto;
+    max-height: 50px;
+  }
+
+  .second-right-img img {
+    width: 120px;
+  }
+}
+
+
+@media screen and (max-width:425px){
+  .second-right-img img {
+    width: 100px;
+  }
+  
+}
+
+
+

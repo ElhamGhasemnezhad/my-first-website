@@ -1,0 +1,35 @@
+/* استایل های عمومی */
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;	
+}
+/*برای اینکه بخش اول هدر در حالت ریسپانسیو  اسکرول نخورد */
+body {
+  overflow-x: hidden;
+}
+/* تمام قسمت های سایت از چپ و راست صفحه فاصله یکسان بگیرند */ 
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "yekan";
+  src: url("../fonts/yekan-normal.woff");
+}
+
+@font-face {
+  font-family: "nassim";
+  src: url("../fonts/nassim-bold.woff");
+}
+  

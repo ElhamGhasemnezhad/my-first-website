@@ -1,0 +1,367 @@
+/* استایل مربوط به زیر منو های قسمت سوم*/
+.nav-item-3:hover .nav-list-3 {                             
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  right: 0;
+  background-color: rgb(219, 219, 219);
+  padding: 5px;
+}
+
+.third-third-header-menu-container .nav-list-menu .nav-item-3:nth-child(8) {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.nav-list-3 a {
+  color:rgb(88, 87, 87)
+}
+
+.ECO {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;  
+}
+
+.ECO >li {
+  width: 25%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;  
+}
+
+.EAEU {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+    
+}
+
+.EAEU >li {
+  width: 19%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.bank {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.bank >li{
+  width: 16.5%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.bimeh {
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.bimeh >li {
+ width: 16.5%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.petro{
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.petro >li {
+ width: 33%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.broker{
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.broker >li {
+  width: 14%;
+  border-left: 1px solid rgb(95, 95, 95);
+  margin-bottom: 5px;
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bg-gray:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.bg-blue:hover { 
+  background-color:blue;
+}
+
+.bg-blue:hover > a { 
+  color: #fff !important;
+}
+
+.bg-light:hover {
+  background-color: #cecece;
+  color: #fff !important;
+}
+
+.bg-light:hover > a {
+  color: #fff !important;
+}
+
+.bg-red:hover {
+  background-color: rgb(211, 2, 2);
+  color: #fff;
+}
+
+.bg-red:hover > a {
+  color: #fff !important;
+}
+
+.bg-violet:hover {
+  background-color: rgb(71, 15, 124);
+}
+
+.bg-violet:hover > a{
+ color: #fff !important;
+}
+
+.bg-f:hover {
+  background-color: #0099CC;
+}
+
+.bg-f:hover > a {
+  color: #fff !important;
+}
+
+.bg-green:hover {
+  background-color: rgb(68, 128, 8);
+}
+
+.bg-green:hover > a {
+  color: #fff !important;
+}
+
+.bg-coral:hover {
+  background-color: coral;
+}
+
+.bg-coral:hover > a {
+  color: #fff !important;
+}
+
+.bg-crimson:hover {
+  background-color:crimson;
+}
+
+.bg-crimson:hover > a {
+  color: #fff !important;
+}
+
+.bg-corn:hover {
+  background-color:cornflowerblue;
+}
+
+.bg-corn:hover > a {
+  color: #fff !important;
+}
+
+.bg-darkred:hover {
+  background-color:darkred;
+}
+
+.bg-darkred:hover > a {
+  color: #fff !important;
+}
+
+.bg-pink:hover {
+  background-color:rgb(233, 112, 132);
+}
+
+.bg-pink:hover > a {
+  color: #fff !important;
+}
+
+.bg-orenge:hover {
+  background-color:orange;
+}
+
+.bg-orenge:hover > a {
+  color: #fff !important;
+}
+
+.bg-purple:hover {
+  background-color:purple;
+}
+
+.bg-purple:hover > a {
+  color: #fff !important;
+}
+
+.bg-yellow:hover {
+  background-color:yellowgreen;
+}
+
+.bg-yellow:hover > a {
+  color: #fff !important;
+}
+
+.bg-peru:hover {
+  background-color:peru;
+}
+
+.bg-peru:hover > a {
+  color: #fff !important;
+}
+
+.bg-linen:hover {
+  background-color:rgb(206, 184, 163);
+}
+
+.bg-linen:hover > a {
+  color: #fff !important;
+}
+
+.bg-pink:hover {
+  background-color:rgb(233, 112, 132);
+}
+
+.bg-pink:hover > a {
+  color: #fff !important;
+}
+
+/* ریسپانسیو کردن زیر منو های قسمت سوم هدر*/
+@media screen and (max-width:767px) {
+  .EAEU >li {
+    width: 25%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;/* برای اینکه اور فلو متن به صورت سه نقطه نمایش بده*/
+  }
+
+  .ECO >li {
+    width: 25%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+  }
+
+  .bank >li {
+    width: 24%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+  }
+
+  .bimeh >li {
+    width: 24%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+   }
+
+  .broker >li {
+    width: 24%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .EAEU >li {
+    width: 49%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+  }
+
+  .ECO >li {
+    width: 49%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+   
+  }
+
+  .bank >li {
+    width: 49%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+  }
+
+  .bimeh >li {
+    width: 49%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+   }
+
+   .broker >li {
+    width: 49%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+  }
+
+  .petro >li {
+    width: 49%;
+    border-left: 1px solid rgb(95, 95, 95);
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: medium;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+  } 
+}
+
+

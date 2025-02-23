@@ -1,0 +1,240 @@
+/* استایل های  مربوط به زیر منو های قسمت دوم هدر*/
+.submenu  {
+  position: absolute;
+  top: 100%;
+  right:0;
+  background-color: black;
+  display: none;
+  justify-content:space-between;
+  width:100vw;
+  border-bottom: 10px solid #bb0000;
+  z-index: 1000; 
+  padding: 10px 40px; 
+}
+
+.sub-table  {
+  width: 33%;
+}
+
+.submenu .sub-table table {
+  background-color: #111;
+  border-collapse: separate;  
+  border-spacing: 12px; 
+  width: 100%;
+}
+               
+.submenu .sub-table table th {
+  background-color: #222;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: nassim;
+  text-align: center;
+  color: #fff;
+}
+
+.submenu .sub-table table th:hover {
+  background-color: #bb0000;
+}
+
+.submenu .sub-table table td {
+  font-size: 14px;
+  font-family: nassim;
+  text-align: right;
+  color: #fff;
+}
+
+.submenu .sub-table table td:hover {
+  background-color: #bb0000;
+}
+
+.submenu li a {
+  width: 100%;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-family: nassim;
+  text-align: right;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.submenu li i {
+  color: #bb0000;
+}
+
+.sub-list {
+  width: 16.6%;
+  border-left: 1px solid #444 ;
+  padding: 5px;
+}
+
+.sub-list:hover {
+  background-color: #bb0000;
+}
+
+.sub-list:hover i {
+  color: #fff;
+}
+
+.free-zone {
+  justify-content: center;
+}
+
+.free-zone li {
+  margin: 0 15px;
+}
+
+.free-zone li a img {
+  width: 100%;
+  border: 4px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.free-zone li:hover img {
+  transform: scale(1);
+  border-color: #bb0000;
+}
+
+.city {
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.city li {
+  width: 16%;
+  border-left: 2px solid #444;
+  text-align: right;
+}
+
+.city li:hover {
+  background-color: #bb0000;
+}
+
+.city li:hover i {
+  color:#fff
+}
+
+.nav-item.active .submenu {
+  display: flex;
+}
+
+.nav-item.second-search-item {
+  display: none;
+}
+/* ریسپانسیو  زیر منو های قسمت دوم هدر*/
+@media screen and (max-width:992px) {
+  .submenu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #444;
+  }
+
+  .active .event {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sub-table {
+    width: 100%;
+  }
+
+  .active .data {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .data > .sub-list {
+     width: 50%;
+     border-left:  1px solid #222;
+     margin-bottom: 3px;
+  }
+
+  .active .city {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .city > li {
+    width: 49%;
+    border-left:  1px solid #222;
+    margin-bottom: 3px;
+    white-space: none;
+    line-break: none;
+
+  }
+
+  .active .free-zone  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 5px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .free-zone > li {
+    width: 49.5%;
+    height: 20%;
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .free-zone > li:hover {
+    background-color: #bb0000;
+  }
+   
+  .free-zone > li > a > img {
+    width: 25%;
+    border: none;
+    
+  }
+  .active .media {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .media > .sub-list {
+     width: 50%;
+     border-left:  1px solid #222;
+     margin-bottom: 3px;
+  }
+  .nav-item.second-search-item {
+    display: block;
+    
+  }
+
+  .nav-item.second-search-item:hover{
+    background-color: #bb0000;
+  }
+  
+  .nav-item.second-search-item >i {
+    color: #bb0000;
+
+  }
+  
+}
+@media screen and (min-width:800px) {
+  .second-nav-menu >.nav-list > .nav-item:hover .submenu {
+    display: flex;
+    z-index: 2000;
+  }
+}
+
+
+
+
+
+
+  
+
+
+
+

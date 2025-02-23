@@ -1,0 +1,90 @@
+/* استایل های مربوط به قمت سوم هدر*/
+.third-header-menu {
+  background-color: #abb1b4;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+.fa-house-chimney {
+  font-family: 8px;
+  color: #111111;
+ }
+
+.fa-square-rss {
+  font-family: 8px;
+  color: orange;
+ }
+
+.third-header-menu-container {
+  overflow-x: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.third-header-menu >.third-header-menu-container> .nav-list-menu {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  display: flex;
+
+}
+
+.third-header-menu>.third-header-menu-container > .nav-list-menu > .nav-item-3 {
+  display: flex;
+  flex-wrap: nowrap;
+  line-break: none;
+  white-space: none;
+  border-left: 1px solid #777777;
+  padding: 7px 10px;
+}
+
+.third-header-menu>.third-header-menu-container > .nav-list-menu > .nav-item-3 > a {
+  white-space: nowrap;
+  color: #111111;
+  padding: 0;
+  font-size: 13px;
+  font-family: nassim; 
+}
+
+.third-header-menu   .scroll-btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+}
+  
+.left-btn {
+  left: 4%; 
+}
+  
+.right-btn {
+  right: 4%;  
+}
+
+.third-header-menu .scroll-btn>i {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.third-header-menu > .third-header-menu-container > .nav-list-menu > .nav-item-3 > .btn-bar {
+  color: #bb0000;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.nav-list-3{
+  display: none;
+}
+
+
+
+
+
